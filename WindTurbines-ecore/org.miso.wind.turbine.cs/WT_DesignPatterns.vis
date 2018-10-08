@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<vis:MetamodelVisibility xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:vis="http://miso.es/visibility">
+  <visibilityRules visibility="PROJECT" expression="self.isPublic = true;">
+    <eClass href="WT_DesignPatterns.ecore#//StateMachine"/>
+  </visibilityRules>
+</vis:MetamodelVisibility>

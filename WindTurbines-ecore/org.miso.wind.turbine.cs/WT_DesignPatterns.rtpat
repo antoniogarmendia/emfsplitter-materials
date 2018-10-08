@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="ASCII"?>
+<rtpat:PatternInstances xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dslpat="http://mondo.org/dslPatterns" xmlns:rtpat="http://mondo.org/runtimePatterns">
+  <appliedPatterns ident="Scope">
+    <pattern href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.1"/>
+    <classInstances>
+      <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.1/@rootVariant/@andChildren.0/@metaModel/@classInterfaces.0"/>
+      <element href="WT_DesignPatterns.ecore#//Component"/>
+      <referenceInstances>
+        <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.1/@rootVariant/@andChildren.0/@metaModel/@refInterfaces.1"/>
+        <element href="WT_DesignPatterns.ecore#//Component/states"/>
+      </referenceInstances>
+    </classInstances>
+  </appliedPatterns>
+  <appliedPatterns ident="Visibility">
+    <pattern href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.2"/>
+    <classInstances>
+      <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.2/@rootVariant/@andChildren.0/@metaModel/@classInterfaces.0"/>
+      <element href="WT_DesignPatterns.ecore#//StateMachine"/>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="self.isPublic = true;">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.2/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.1"/>
+      </featureInstances>
+    </classInstances>
+  </appliedPatterns>
+  <appliedPatterns ident="Modularity">
+    <pattern href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0"/>
+    <classInstances>
+      <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@classInterfaces.3"/>
+      <element href="WT_DesignPatterns.ecore#//WTComponents"/>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="/org.miso.wind.turbine.cs/icons/Project.png">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.2"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:TypeFeatureRoleInstance">
+        <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.0"/>
+        <element href="WT_DesignPatterns.ecore#//WTComponents/name"/>
+      </featureInstances>
+      <referenceInstances>
+        <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@refInterfaces.0"/>
+        <element href="WT_DesignPatterns.ecore#//WTComponents/subsystems"/>
+      </referenceInstances>
+    </classInstances>
+    <classInstances>
+      <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@classInterfaces.4"/>
+      <element href="WT_DesignPatterns.ecore#//Subsystem"/>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="/org.miso.wind.turbine.cs/icons/Subsystem.png">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.2"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:TypeFeatureRoleInstance">
+        <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.0"/>
+        <element href="WT_DesignPatterns.ecore#//Subsystem/name"/>
+      </featureInstances>
+      <referenceInstances>
+        <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@refInterfaces.0"/>
+        <element href="WT_DesignPatterns.ecore#//Subsystem/subsystems"/>
+      </referenceInstances>
+      <referenceInstances>
+        <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@refInterfaces.0"/>
+        <element href="WT_DesignPatterns.ecore#//Subsystem/ensembles"/>
+      </referenceInstances>
+      <referenceInstances>
+        <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@refInterfaces.0"/>
+        <element href="WT_DesignPatterns.ecore#//Subsystem/beh"/>
+      </referenceInstances>
+    </classInstances>
+    <classInstances>
+      <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@classInterfaces.5"/>
+      <element href="WT_DesignPatterns.ecore#//Architecture"/>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="/org.miso.wind.turbine.cs/icons/Architecture.png">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.2"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:TypeFeatureRoleInstance">
+        <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.0"/>
+        <element href="WT_DesignPatterns.ecore#//Architecture/name"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="arq">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.1"/>
+      </featureInstances>
+    </classInstances>
+    <classInstances>
+      <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@classInterfaces.4"/>
+      <element href="WT_DesignPatterns.ecore#//ControlSubsystem"/>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="/org.miso.wind.turbine.cs/icons/ControlSubsystem.png">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.2"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:TypeFeatureRoleInstance">
+        <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.0"/>
+        <element href="WT_DesignPatterns.ecore#//ControlSubsystem/name"/>
+      </featureInstances>
+      <referenceInstances>
+        <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@refInterfaces.0"/>
+        <element href="WT_DesignPatterns.ecore#//ControlSubsystem/states"/>
+      </referenceInstances>
+    </classInstances>
+    <classInstances>
+      <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@classInterfaces.5"/>
+      <element href="WT_DesignPatterns.ecore#//StateMachine"/>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="/org.miso.wind.turbine.cs/icons/StateMachine.png">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.2"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:TypeFeatureRoleInstance">
+        <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.0"/>
+        <element href="WT_DesignPatterns.ecore#//StateMachine/name"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="state">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.0/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.1"/>
+      </featureInstances>
+    </classInstances>
+  </appliedPatterns>
+  <appliedPatterns ident="Constraint">
+    <pattern href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4"/>
+    <classInstances>
+      <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@classInterfaces.0"/>
+      <element href="WT_DesignPatterns.ecore#//Subsystem"/>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="checkDepthSubsystem">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.0"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="self->forAll(sub1 | sub1.subsystems->forAll(sub2 |  sub2.subsystems->forAll(sub3 | sub3.subsystems->forAll(sub4 | sub4.subsystems->forAll(sub5 | sub5.subsystems.size() = 0)))));">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.1"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="&quot;The Root Package &quot; + self.name +&quot; exceeds the amount of Subsystem&quot;;">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.2"/>
+      </featureInstances>
+    </classInstances>
+    <classInstances>
+      <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@classInterfaces.0"/>
+      <element href="WT_DesignPatterns.ecore#//Subsystem"/>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="componentsConnected">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.0"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="self.ensembles->collect(arq|arq.connectors)->flatten()&#xD;&#xA;&#x9;->exists(con| Component.all->exists(comp| &#xD;&#xA;&#x9;&#x9;&#x9;comp.ports.includesAll(Set{con.inPort,con.outPort})));">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.1"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="&quot;There are no components connected to each other in this package&quot;;">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.2"/>
+      </featureInstances>
+    </classInstances>
+    <classInstances>
+      <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@classInterfaces.0"/>
+      <element href="WT_DesignPatterns.ecore#//Subsystem"/>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="inputPortSubsystem">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.0"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="self.ensembles->collect(arq|arq.elements)->flatten()&#xD;&#xA;&#x9;->exists(c| c.ports->exists(p|p.isTypeOf(InPort)));">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.1"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="&quot;There are no components with input ports&quot;;">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.2"/>
+      </featureInstances>
+    </classInstances>
+    <classInstances>
+      <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@classInterfaces.0"/>
+      <element href="WT_DesignPatterns.ecore#//StateMachine"/>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="existInitialState">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.0"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="self.states->one(s | s.isTypeOf(InitialState));">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.1"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="&quot;Element &quot; + self.name + &quot; does not have an Initial State&quot;;">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.2"/>
+      </featureInstances>
+    </classInstances>
+    <classInstances>
+      <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@classInterfaces.0"/>
+      <element href="WT_DesignPatterns.ecore#//StateMachine"/>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="existSimpleState">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.0"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="self.states->exists(s | s.isTypeOf(SimpleState));">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.1"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="&quot;Element &quot; + self.name + &quot; does not have an Simple State&quot;;&#xD;&#xA;">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.2"/>
+      </featureInstances>
+    </classInstances>
+    <classInstances>
+      <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@classInterfaces.0"/>
+      <element href="WT_DesignPatterns.ecore#//SimpleState"/>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="checkAllStatesConnected">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.0"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="self.closure(v : Vertex | v.incoming.closure(e : Edge | e.source))->&#xD;&#xA;&#x9;&#x9;&#x9;exists(v | v.isTypeOf(InitialState));&#xD;&#xA;">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.1"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="&quot;In &quot; + self.name + &quot; the initial state cannot be reached&quot;;">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.2"/>
+      </featureInstances>
+    </classInstances>
+    <classInstances>
+      <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@classInterfaces.0"/>
+      <element href="WT_DesignPatterns.ecore#//Port"/>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="portsConnected">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.0"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="Connector.all.exists(c : Connector | (c.inPort = self and c.outPort.isDefined())  or&#xD;&#xA; (c.inPort.isDefined() and c. outPort = self));&#xD;&#xA;&#xD;&#xA;">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.1"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="&quot;The &quot; + self.label + &quot; is not connected with a Connector.&quot;;">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.2"/>
+      </featureInstances>
+    </classInstances>
+    <classInstances>
+      <role href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@classInterfaces.0"/>
+      <element href="WT_DesignPatterns.ecore#//InitialState"/>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="initStateIsNotIsolated">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.0"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="self.outgoing.size()>=1;">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.1"/>
+      </featureInstances>
+      <featureInstances xsi:type="rtpat:InstanceFeatureRoleInstance" value="&quot;The &quot; + self.name + &quot;is an isolated state&quot;;">
+        <role xsi:type="dslpat:FeatureInstance" href="patterns/repository.dslpatterns#//@categories.4/@subcategories.0/@patterns.4/@rootVariant/@andChildren.0/@metaModel/@attrInterfaces.2"/>
+      </featureInstances>
+    </classInstances>
+  </appliedPatterns>
+</rtpat:PatternInstances>

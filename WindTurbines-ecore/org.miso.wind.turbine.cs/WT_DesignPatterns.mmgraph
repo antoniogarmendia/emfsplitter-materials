@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MetaModelGraph:Graph xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MetaModelGraph="http://miso.org/MetaModelGraph/1.0">
+  <subgraph root="//@subgraph.0/@nodes.0">
+    <nodes compositions="//@subgraph.0/@relations.0" icon="/org.miso.wind.turbine.cs/icons/Project.png">
+      <eClass href="WT_DesignPatterns.ecore#//WTComponents"/>
+      <enumModularNotation>Project</enumModularNotation>
+      <name href="WT_DesignPatterns.ecore#//WTComponents/name"/>
+    </nodes>
+    <nodes compositions="//@subgraph.0/@relations.1 //@subgraph.0/@relations.2 //@subgraph.0/@relations.3" relations="//@subgraph.0/@relations.0 //@subgraph.0/@relations.1" icon="/org.miso.wind.turbine.cs/icons/Subsystem.png" extension="">
+      <eClass href="WT_DesignPatterns.ecore#//Subsystem"/>
+      <enumModularNotation>Package</enumModularNotation>
+      <name href="WT_DesignPatterns.ecore#//Subsystem/name"/>
+    </nodes>
+    <nodes compositions="//@subgraph.0/@relations.4 //@subgraph.0/@relations.5" relations="//@subgraph.0/@relations.2" icon="/org.miso.wind.turbine.cs/icons/Architecture.png" extension="arq">
+      <eClass href="WT_DesignPatterns.ecore#//Architecture"/>
+      <enumModularNotation>Unit</enumModularNotation>
+      <name href="WT_DesignPatterns.ecore#//Architecture/name"/>
+    </nodes>
+    <nodes compositions="//@subgraph.0/@relations.6" relations="//@subgraph.0/@relations.3" icon="/org.miso.wind.turbine.cs/icons/ControlSubsystem.png" extension="">
+      <eClass href="WT_DesignPatterns.ecore#//ControlSubsystem"/>
+      <enumModularNotation>Package</enumModularNotation>
+      <name href="WT_DesignPatterns.ecore#//ControlSubsystem/name"/>
+    </nodes>
+    <nodes compositions="//@subgraph.0/@relations.7" relations="//@subgraph.0/@relations.4">
+      <eClass href="WT_DesignPatterns.ecore#//Component"/>
+    </nodes>
+    <nodes relations="//@subgraph.0/@relations.5">
+      <eClass href="WT_DesignPatterns.ecore#//Connector"/>
+    </nodes>
+    <nodes compositions="//@subgraph.0/@relations.8 //@subgraph.0/@relations.9" relations="//@subgraph.0/@relations.6" icon="/org.miso.wind.turbine.cs/icons/StateMachine.png" extension="state">
+      <eClass href="WT_DesignPatterns.ecore#//StateMachine"/>
+      <enumModularNotation>Unit</enumModularNotation>
+      <name href="WT_DesignPatterns.ecore#//StateMachine/name"/>
+    </nodes>
+    <nodes subClasses="//@subgraph.0/@relations.10 //@subgraph.0/@relations.11" relations="//@subgraph.0/@relations.7" directSubclasses="//@subgraph.0/@relations.10 //@subgraph.0/@relations.11">
+      <eClass href="WT_DesignPatterns.ecore#//Port"/>
+    </nodes>
+    <nodes subClasses="//@subgraph.0/@relations.12 //@subgraph.0/@relations.13" relations="//@subgraph.0/@relations.8" directSubclasses="//@subgraph.0/@relations.12 //@subgraph.0/@relations.13">
+      <eClass href="WT_DesignPatterns.ecore#//Vertex"/>
+    </nodes>
+    <nodes relations="//@subgraph.0/@relations.9">
+      <eClass href="WT_DesignPatterns.ecore#//Edge"/>
+    </nodes>
+    <nodes relations="//@subgraph.0/@relations.10">
+      <eClass href="WT_DesignPatterns.ecore#//InPort"/>
+    </nodes>
+    <nodes relations="//@subgraph.0/@relations.11">
+      <eClass href="WT_DesignPatterns.ecore#//OutPort"/>
+    </nodes>
+    <nodes relations="//@subgraph.0/@relations.12">
+      <eClass href="WT_DesignPatterns.ecore#//InitialState"/>
+    </nodes>
+    <nodes relations="//@subgraph.0/@relations.13">
+      <eClass href="WT_DesignPatterns.ecore#//SimpleState"/>
+    </nodes>
+    <relations xsi:type="MetaModelGraph:Composition" target="//@subgraph.0/@nodes.1" parentNode="//@subgraph.0/@nodes.0">
+      <eReference href="WT_DesignPatterns.ecore#//WTComponents/subsystems"/>
+    </relations>
+    <relations xsi:type="MetaModelGraph:Composition" target="//@subgraph.0/@nodes.1" parentNode="//@subgraph.0/@nodes.1">
+      <eReference href="WT_DesignPatterns.ecore#//Subsystem/subsystems"/>
+    </relations>
+    <relations xsi:type="MetaModelGraph:Composition" target="//@subgraph.0/@nodes.2" parentNode="//@subgraph.0/@nodes.1">
+      <eReference href="WT_DesignPatterns.ecore#//Subsystem/ensembles"/>
+    </relations>
+    <relations xsi:type="MetaModelGraph:Composition" target="//@subgraph.0/@nodes.3" parentNode="//@subgraph.0/@nodes.1">
+      <eReference href="WT_DesignPatterns.ecore#//Subsystem/beh"/>
+    </relations>
+    <relations xsi:type="MetaModelGraph:Composition" target="//@subgraph.0/@nodes.4" parentNode="//@subgraph.0/@nodes.2">
+      <eReference href="WT_DesignPatterns.ecore#//Architecture/elements"/>
+    </relations>
+    <relations xsi:type="MetaModelGraph:Composition" target="//@subgraph.0/@nodes.5" parentNode="//@subgraph.0/@nodes.2">
+      <eReference href="WT_DesignPatterns.ecore#//Architecture/connectors"/>
+    </relations>
+    <relations xsi:type="MetaModelGraph:Composition" target="//@subgraph.0/@nodes.6" parentNode="//@subgraph.0/@nodes.3">
+      <eReference href="WT_DesignPatterns.ecore#//ControlSubsystem/states"/>
+    </relations>
+    <relations xsi:type="MetaModelGraph:Composition" target="//@subgraph.0/@nodes.7" parentNode="//@subgraph.0/@nodes.4">
+      <eReference href="WT_DesignPatterns.ecore#//Component/ports"/>
+    </relations>
+    <relations xsi:type="MetaModelGraph:Composition" target="//@subgraph.0/@nodes.8" parentNode="//@subgraph.0/@nodes.6">
+      <eReference href="WT_DesignPatterns.ecore#//StateMachine/states"/>
+    </relations>
+    <relations xsi:type="MetaModelGraph:Composition" target="//@subgraph.0/@nodes.9" parentNode="//@subgraph.0/@nodes.6">
+      <eReference href="WT_DesignPatterns.ecore#//StateMachine/transitions"/>
+    </relations>
+    <relations xsi:type="MetaModelGraph:SubClass" target="//@subgraph.0/@nodes.10"/>
+    <relations xsi:type="MetaModelGraph:SubClass" target="//@subgraph.0/@nodes.11"/>
+    <relations xsi:type="MetaModelGraph:SubClass" target="//@subgraph.0/@nodes.12"/>
+    <relations xsi:type="MetaModelGraph:SubClass" target="//@subgraph.0/@nodes.13"/>
+  </subgraph>
+</MetaModelGraph:Graph>

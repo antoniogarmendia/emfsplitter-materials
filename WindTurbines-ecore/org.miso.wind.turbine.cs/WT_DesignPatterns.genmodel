@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.miso.wind.turbine.cs/src" modelPluginID="org.miso.wind.turbine.cs"
+    modelName="WT_DesignPatterns" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>WT_DesignPatterns.ecore</foreignModel>
+  <genPackages prefix="WT" disposableProviderFactory="true" ecorePackage="WT_DesignPatterns.ecore#/">
+    <genClasses ecoreClass="WT_DesignPatterns.ecore#//WTComponents">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//WTComponents/subsystems"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WT_DesignPatterns.ecore#//WTComponents/name"/>
+    </genClasses>
+    <genClasses ecoreClass="WT_DesignPatterns.ecore#//Subsystem">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//Subsystem/subsystems"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WT_DesignPatterns.ecore#//Subsystem/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//Subsystem/ensembles"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//Subsystem/beh"/>
+    </genClasses>
+    <genClasses ecoreClass="WT_DesignPatterns.ecore#//Architecture">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WT_DesignPatterns.ecore#//Architecture/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//Architecture/elements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//Architecture/connectors"/>
+    </genClasses>
+    <genClasses ecoreClass="WT_DesignPatterns.ecore#//Connector">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//Connector/inPort"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//Connector/outPort"/>
+    </genClasses>
+    <genClasses ecoreClass="WT_DesignPatterns.ecore#//ControlSubsystem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WT_DesignPatterns.ecore#//ControlSubsystem/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//ControlSubsystem/states"/>
+    </genClasses>
+    <genClasses ecoreClass="WT_DesignPatterns.ecore#//StateMachine">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WT_DesignPatterns.ecore#//StateMachine/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//StateMachine/states"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//StateMachine/transitions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WT_DesignPatterns.ecore#//StateMachine/isPublic"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="WT_DesignPatterns.ecore#//Vertex">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//Vertex/outgoing"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//Vertex/incoming"/>
+    </genClasses>
+    <genClasses ecoreClass="WT_DesignPatterns.ecore#//Edge">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//Edge/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//Edge/target"/>
+    </genClasses>
+    <genClasses ecoreClass="WT_DesignPatterns.ecore#//InitialState"/>
+    <genClasses ecoreClass="WT_DesignPatterns.ecore#//SimpleState"/>
+    <genClasses ecoreClass="WT_DesignPatterns.ecore#//Component">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//Component/ports"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WT_DesignPatterns.ecore#//Component/states"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WT_DesignPatterns.ecore#//Component/label"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="WT_DesignPatterns.ecore#//Port">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WT_DesignPatterns.ecore#//Port/label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WT_DesignPatterns.ecore#//Port/isPublic"/>
+    </genClasses>
+    <genClasses ecoreClass="WT_DesignPatterns.ecore#//InPort"/>
+    <genClasses ecoreClass="WT_DesignPatterns.ecore#//OutPort"/>
+    <genClasses image="false" ecoreClass="WT_DesignPatterns.ecore#//DocumentElt">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WT_DesignPatterns.ecore#//DocumentElt/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WT_DesignPatterns.ecore#//DocumentElt/description"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

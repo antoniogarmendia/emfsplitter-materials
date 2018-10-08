@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<def:MetaModelScope xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:def="http://mondo.org/ScopeDefinition">
+  <scopeRules scopeDefinition="SAME_PACKAGE">
+    <eClass href="WT_DesignPatterns.ecore#//Component"/>
+    <eReference href="WT_DesignPatterns.ecore#//Component/states"/>
+  </scopeRules>
+</def:MetaModelScope>

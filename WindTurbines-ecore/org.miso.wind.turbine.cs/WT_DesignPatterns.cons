@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<cons:MetamodelConstraint xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cons="http://miso.es/constraints" metamodel="http://mondo.org/WT">
+  <constraints name="globalConstraintSM" statement="StateMachine.all.asSet().size() &lt;=10;" errorMessage="&quot;The model exceeds the maximum amount of State Machine that is 10&quot;;"/>
+  <constraints name="amountControlSubsystem" statement="ControlSubsystem.all.asSet().size() &lt;=10;" errorMessage="&quot;The model exceeds the maximum amount of Control Subsystem in each root package which is 10&quot;;" definition="SAME_ROOT_PACKAGE"/>
+  <constraints name="checkDepthSubsystem" statement="self->forAll(sub1 | sub1.subsystems->forAll(sub2 |  sub2.subsystems->forAll(sub3 | sub3.subsystems->forAll(sub4 | sub4.subsystems->forAll(sub5 | sub5.subsystems.size() = 0)))));" errorMessage="&quot;The Root Package &quot; + self.name +&quot; exceeds the amount of Subsystem&quot;;" definition="SAME_ROOT_PACKAGE">
+    <eClass href="WT_DesignPatterns.ecore#//Subsystem"/>
+  </constraints>
+  <constraints name="amountComponents" statement="Component.all.asSet().size() &lt;=50;" errorMessage="&quot;The Root Package 50 components&quot;;" definition="SAME_ROOT_PACKAGE"/>
+  <constraints name="componentsConnected" statement="self.ensembles->collect(arq|arq.connectors)->flatten()&#xD;&#xA;&#x9;->exists(con| Component.all->exists(comp| &#xD;&#xA;&#x9;&#x9;&#x9;comp.ports.includesAll(Set{con.inPort,con.outPort})));" errorMessage="&quot;There are no components connected to each other in this package&quot;;" definition="SAME_PACKAGE">
+    <eClass href="WT_DesignPatterns.ecore#//Subsystem"/>
+  </constraints>
+  <constraints name="inputPortSubsystem" statement="self.ensembles->collect(arq|arq.elements)->flatten()&#xD;&#xA;&#x9;->exists(c| c.ports->exists(p|p.isTypeOf(InPort)));" errorMessage="&quot;There are no components with input ports&quot;;" definition="SAME_PACKAGE">
+    <eClass href="WT_DesignPatterns.ecore#//Subsystem"/>
+  </constraints>
+  <constraints name="existInitialState" statement="self.states->one(s | s.isTypeOf(InitialState));" errorMessage="&quot;Element &quot; + self.name + &quot; does not have an Initial State&quot;;" definition="UNIT">
+    <eClass href="WT_DesignPatterns.ecore#//StateMachine"/>
+  </constraints>
+  <constraints name="existSimpleState" statement="self.states->exists(s | s.isTypeOf(SimpleState));" errorMessage="&quot;Element &quot; + self.name + &quot; does not have an Simple State&quot;;&#xD;&#xA;" definition="UNIT">
+    <eClass href="WT_DesignPatterns.ecore#//StateMachine"/>
+  </constraints>
+  <constraints name="checkAllStatesConnected" statement="self.closure(v : Vertex | v.incoming.closure(e : Edge | e.source))->&#xD;&#xA;&#x9;&#x9;&#x9;exists(v | v.isTypeOf(InitialState));&#xD;&#xA;" errorMessage="&quot;In &quot; + self.name + &quot; the initial state cannot be reached&quot;;" definition="UNIT">
+    <eClass href="WT_DesignPatterns.ecore#//SimpleState"/>
+  </constraints>
+  <constraints name="portsConnected" statement="Connector.all.exists(c : Connector | (c.inPort = self and c.outPort.isDefined())  or&#xD;&#xA; (c.inPort.isDefined() and c. outPort = self));&#xD;&#xA;&#xD;&#xA;" errorMessage="&quot;The &quot; + self.label + &quot; is not connected with a Connector.&quot;;" definition="UNIT">
+    <eClass href="WT_DesignPatterns.ecore#//Port"/>
+  </constraints>
+  <constraints name="initStateIsNotIsolated" statement="self.outgoing.size()>=1;" errorMessage="&quot;The &quot; + self.name + &quot;is an isolated state&quot;;" definition="UNIT">
+    <eClass href="WT_DesignPatterns.ecore#//InitialState"/>
+  </constraints>
+</cons:MetamodelConstraint>

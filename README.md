@@ -11,3 +11,11 @@ Contains 3 large models of CAEX30.
 ## Folder: OMG meta-models
 
 Contains an excel with a list of some OMG models converted to Ecore.
+
+## Folder: WindTurbine-ecore
+
+DSL-tao Project with the definition of patterns using the WT_DesignPatterns.diagram.
+
+## Folder: WindTurbine-models
+
+Models created to test constraints using the generated environment for WindTurbines. The environment was created using EMFSplitter. 
