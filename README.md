@@ -10,4 +10,4 @@ Contains 3 large models of CAEX30.
 
 ## Folder: OMG meta-models
 
-Contains an excel with some OMG models converted to Ecore.
+Contains an excel with a list of some OMG models converted to Ecore.
