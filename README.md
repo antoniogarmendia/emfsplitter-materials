@@ -8,5 +8,6 @@ Contains 3 large models of CAEX30.
 + prototype300.30 - 310.222 elements
 + prototype300.40 - 410.282 elements
 
-## Folder: AtlanMod meta-models
 ## Folder: OMG meta-models
+
+Contains an excel with some OMG models converted to Ecore.
