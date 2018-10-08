@@ -14,7 +14,7 @@ Contains an excel with a list of some OMG models converted to Ecore.
 
 ## Folder: WindTurbine-ecore
 
-DSL-tao Project with the definition of patterns using the WT_DesignPatterns.diagram.
+DSL-tao Project with the definition of the Wind Turbines meta-model and the instantiated modularity patterns (WT_DesignPatterns.diagram).
 
 ## Folder: WindTurbine-models
 
